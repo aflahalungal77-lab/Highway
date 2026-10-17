@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#11130f">
+<meta name="description" content="High Way Events and Caterers — memorable events, exceptional food, beautiful decor and warm hospitality.">
+<title>High Way Events & Caterers | Moments Made Memorable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#11130f;--ink2:#191b16;--cream:#f7f4ed;--paper:#fffdf8;--gold:#d9b66e;--muted:#b8b6ac;--green:#347b50}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 44px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(17,19,15,.96);backdrop-filter:blur(12px);border-bottom:1px solid #ffffff18;color:#fff}
+.nav{height:84px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{display:flex;align-items:center;gap:13px;min-width:225px}.brand img{width:54px;height:54px;object-fit:contain;border-radius:50%}.brand-name{font-family:"Playfair Display",serif;font-size:23px;letter-spacing:.2px;line-height:1.05}.brand-sub{font-size:9px;letter-spacing:2.5px;color:var(--gold);margin-top:6px}.navlinks{display:flex;align-items:center;gap:28px;font-size:13px;color:#e5e2da}.navlinks a:hover{color:var(--gold)}.wa{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:999px;background:#347b50;color:white;font-weight:600;font-size:13px;transition:.2s;white-space:nowrap}.wa:hover{background:#28613e;transform:translateY(-2px)}.menu{display:none;background:none;border:1px solid #ffffff35;color:white;border-radius:10px;padding:9px 12px;font-size:20px}
+.hero{position:relative;overflow:hidden;background:var(--ink);color:#fff;min-height:570px;display:flex;align-items:center}.hero-photo{position:absolute;inset:0 0 0 38%;background:linear-gradient(90deg,#11130f 0%,#11130fba 20%,#11130f20 60%,#11130f38 100%),linear-gradient(0deg,#11130f8c,transparent 55%),url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1800&q=85") center/cover}.hero:after{content:"";position:absolute;inset:auto 0 0;height:100px;background:linear-gradient(0deg,#11130f,transparent);pointer-events:none}.hero-content{position:relative;z-index:1;width:min(650px,65%);padding:88px 0 108px}.eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:11px;font-weight:700}.hero h1{font-family:"Playfair Display",serif;font-weight:600;font-size:clamp(44px,6vw,76px);line-height:1.04;letter-spacing:-1.6px;margin:22px 0}.hero h1 span{color:var(--gold);display:block}.hero p{color:#e5e3dc;line-height:1.85;font-size:16px;max-width:530px;margin:0 0 30px}.hero-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.btn-outline{border:1px solid #ffffff60;padding:13px 20px;border-radius:999px;font-size:13px;color:#fff}.btn-outline:hover{border-color:var(--gold);color:var(--gold)}.hero-note{margin-top:38px;display:flex;gap:25px;flex-wrap:wrap;color:#e6e2d6;font-size:12px}.hero-note span{display:flex;align-items:center;gap:8px}.hero-note b{color:var(--gold);font-size:18px}
+.section{padding:88px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 42px}.section-head .eyebrow{color:#94723a}.section-head h2{font-family:"Playfair Display",serif;font-size:clamp(34px,4vw,48px);font-weight:600;margin:13px 0 12px;letter-spacing:-.7px}.section-head p{color:#6c6b64;line-height:1.8;margin:0}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service{background:var(--paper);border:1px solid #e9e3d7;border-radius:15px;overflow:hidden;transition:transform .25s,box-shadow .25s}.service:hover{transform:translateY(-6px);box-shadow:0 18px 45px #28200d12}.service-img{height:175px;background-size:cover;background-position:center;position:relative}.service-img:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#1717105c,transparent)}.service-body{padding:22px 21px 24px}.service-kicker{color:#9a793f;font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:700}.service h3{font-family:"Playfair Display",serif;font-size:24px;margin:9px 0}.service p{font-size:13px;line-height:1.75;color:#6e6b63;margin:0 0 17px}.learn{font-size:12px;font-weight:700;color:#92703a}.learn span{margin-left:5px}
+.about{background:#eae5d9}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about-art{min-height:420px;position:relative;background:url("https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1100&q=85") center/cover;border-radius:18px;overflow:hidden}.about-art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#11130f66,transparent 60%)}.art-label{position:absolute;z-index:1;left:24px;bottom:24px;color:#fff}.art-label strong{display:block;font-family:"Playfair Display",serif;font-size:28px}.art-label small{color:#f0dfb9;letter-spacing:2px;text-transform:uppercase}.about-copy .eyebrow{color:#96733b}.about-copy h2{font-family:"Playfair Display",serif;font-size:clamp(34px,4vw,47px);line-height:1.13;margin:16px 0}.about-copy p{color:#66645d;line-height:1.9;font-size:14px}.values{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin-top:28px}.value{border-top:1px solid #cfc5b1;padding-top:13px}.value strong{display:block;font-size:13px;margin-bottom:6px}.value span{font-size:12px;color:#6d6a61;line-height:1.6}
+.banner{background:var(--ink);color:white;padding:68px 0}.banner-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.banner h2{font-family:"Playfair Display",serif;font-size:clamp(30px,4vw,43px);font-weight:500;margin:0 0 10px}.banner p{color:#c8c5bb;margin:0;line-height:1.7;font-size:14px}
+footer{background:#0b0d0a;color:white;padding:42px 0 24px}.footer-top{display:flex;justify-content:space-between;gap:28px;align-items:center;padding-bottom:28px;border-bottom:1px solid #ffffff20}.footer-brand{display:flex;gap:12px;align-items:center}.footer-brand img{width:46px;height:46px;object-fit:contain;border-radius:50%}.footer-brand strong{font-family:"Playfair Display",serif;font-size:21px}.footer-brand small{display:block;color:var(--gold);letter-spacing:2px;font-size:9px;margin-top:5px}.footer-links{display:flex;gap:22px;flex-wrap:wrap;font-size:12px;color:#d4d1c8}.footer-bottom{padding-top:20px;display:flex;justify-content:space-between;gap:15px;color:#888a80;font-size:11px}.float-wa{position:fixed;right:22px;bottom:22px;z-index:9;background:#25a75a;color:white;border-radius:999px;box-shadow:0 8px 25px #0003;padding:14px 18px;display:flex;gap:9px;align-items:center;font-size:13px;font-weight:700}
+@media(max-width:900px){.navlinks{gap:15px}.brand{min-width:auto}.brand-name{font-size:20px}.services{grid-template-columns:repeat(2,1fr)}.hero-content{width:72%}.about-grid{gap:35px}.hero-photo{left:25%}}
+@media(max-width:680px){.wrap{width:min(100% - 32px,520px)}.nav{height:72px}.brand img{width:44px;height:44px}.brand-name{font-size:18px}.brand-sub{font-size:8px;letter-spacing:1.7px}.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#11130f;padding:18px 22px 24px;flex-direction:column;align-items:flex-start;gap:19px;border-bottom:1px solid #ffffff20}.navlinks.open{display:flex}.nav>.wa{display:none}.menu{display:block}.hero{min-height:650px;align-items:flex-end}.hero-photo{inset:0;background:linear-gradient(90deg,#11130fdb,#11130f55),linear-gradient(0deg,#11130f 0%,#11130f20 75%),url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1200&q=85") center/cover}.hero-content{width:100%;padding:100px 0 78px}.hero h1{font-size:clamp(43px,12vw,62px)}.hero p{font-size:14px}.hero-note{gap:14px 20px;font-size:11px}.section{padding:65px 0}.services{gap:12px}.service-img{height:130px}.service-body{padding:17px 14px 19px}.service h3{font-size:21px}.service p{font-size:12px}.about-grid{grid-template-columns:1fr;gap:30px}.about-art{min-height:300px}.values{gap:15px}.banner-inner{align-items:flex-start;flex-direction:column}.footer-top,.footer-bottom{align-items:flex-start;flex-direction:column}.float-wa{right:14px;bottom:14px;padding:13px 15px}.footer-links{gap:15px}}
+@media(max-width:380px){.services{grid-template-columns:1fr}.service-img{height:175px}.hero-note{display:grid;grid-template-columns:1fr 1fr}}
+
+/* Premium motion layer */
+:root{scroll-padding-top:90px}
+body{overflow-x:hidden}
+::selection{background:#d9b66e;color:#11130f}
+.navlinks a{position:relative;padding:8px 0}
+.navlinks a:after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}
+.navlinks a:hover:after{transform:scaleX(1);transform-origin:left}
+.brand img{transition:transform .5s ease,filter .5s ease}
+.brand:hover img{transform:rotate(-7deg) scale(1.06);filter:drop-shadow(0 0 10px #d9b66e45)}
+.hero-photo{animation:heroReveal 1.25s cubic-bezier(.2,.7,.2,1) both;transform-origin:center}
+.hero-content .eyebrow{animation:riseIn .7s .12s both}
+.hero h1{animation:riseIn .8s .22s both}
+.hero p{animation:riseIn .8s .34s both}
+.hero-actions{animation:riseIn .8s .45s both}
+.hero-note{animation:riseIn .8s .56s both}
+.hero h1 span{background:linear-gradient(100deg,#f1d99c 0%,#c69a4e 40%,#f6e4b7 65%,#d9b66e 100%);background-size:200% auto;color:transparent;background-clip:text;-webkit-background-clip:text;animation:goldFlow 7s linear infinite}
+.eyebrow{display:inline-flex;align-items:center;gap:10px}
+.hero .eyebrow:before{content:"";width:27px;height:1px;background:var(--gold)}
+.wa{box-shadow:0 7px 20px #00000018;position:relative;overflow:hidden}
+.wa:before{content:"";position:absolute;inset:0;transform:translateX(-120%) skewX(-20deg);background:linear-gradient(90deg,transparent,#ffffff30,transparent);transition:transform .65s ease}
+.wa:hover:before{transform:translateX(120%) skewX(-20deg)}
+.section-head{opacity:1}
+.service{position:relative;isolation:isolate}
+.service-img{transition:transform .65s cubic-bezier(.2,.7,.2,1);overflow:hidden}
+.service:hover .service-img{transform:scale(1.035)}
+.service:before{content:"";position:absolute;inset:0;border:1px solid #d9b66e00;border-radius:15px;pointer-events:none;z-index:2;transition:border-color .3s}
+.service:hover:before{border-color:#d9b66e88}
+.service .service-kicker{transition:letter-spacing .3s}
+.service:hover .service-kicker{letter-spacing:2.8px}
+.service .learn span{display:inline-block;transition:transform .25s}
+.service:hover .learn span{transform:translate(4px,-2px)}
+.about-art{background-position:center;transition:background-position 1.2s ease}
+.about-art:hover{background-position:55% center}
+.value{transition:transform .25s,border-color .25s}
+.value:hover{transform:translateY(-3px);border-color:#a17b3d}
+.banner{position:relative;overflow:hidden}
+.banner:before{content:"";position:absolute;width:370px;height:370px;border:1px solid #d9b66e20;border-radius:50%;right:-110px;top:-210px;box-shadow:0 0 0 35px #d9b66e08,0 0 0 70px #d9b66e05;pointer-events:none}
+.banner-inner{position:relative}
+.float-wa{animation:floatPulse 3.4s ease-in-out infinite}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+.service.reveal:nth-child(2){transition-delay:.09s}
+.service.reveal:nth-child(3){transition-delay:.18s}
+.service.reveal:nth-child(4){transition-delay:.27s}
+@keyframes riseIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes heroReveal{from{opacity:.45;transform:scale(1.055)}to{opacity:1;transform:scale(1)}}
+@keyframes goldFlow{0%{background-position:0% center}100%{background-position:200% center}}
+@keyframes floatPulse{0%,100%{transform:translateY(0);box-shadow:0 8px 25px #0003}50%{transform:translateY(-5px);box-shadow:0 13px 30px #0004}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="High Way Events and Caterers home">
+      <img src="assets/high-way-logo.png" alt="High Way Events and Caterers logo">
+      <div><div class="brand-name">HIGH WAY</div><div class="brand-sub">EVENTS &amp; CATERERS</div></div>
+    </a>
+    <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#why-us">Why Us</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="wa" href="https://wa.me/91XXXXXXXXXX?text=Hello%20High%20Way%20Events%20and%20Caterers%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">◉ &nbsp; WhatsApp Us</a>
+    <button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-photo" aria-hidden="true"></div>
+  <div class="wrap"><div class="hero-content">
+    <div class="eyebrow">Your special moments, our priority</div>
+    <h1>Moments made <span>memorable.</span></h1>
+    <p>From beautiful celebrations to unforgettable feasts, we bring every detail together with creativity, care and exceptional service.</p>
+    <div class="hero-actions"><a class="wa" href="https://wa.me/91XXXXXXXXXX?text=Hello%20High%20Way%20Events%20and%20Caterers%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">Plan Your Event &nbsp; ↗</a><a class="btn-outline" href="#services">Explore Our Services ↓</a></div>
+    <div class="hero-note"><span><b>✦</b> Thoughtful planning</span><span><b>✦</b> Quality catering</span><span><b>✦</b> Warm hospitality</span></div>
+  </div></div>
+</section>
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">What we do</div><h2>Every detail, beautifully handled.</h2><p>Whatever the occasion, we help make it feel effortless, welcoming and truly special.</p></div>
+    <div class="services">
+      <article class="service reveal"><div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80')"></div><div class="service-body"><div class="service-kicker">01 / Celebrate</div><h3>Events</h3><p>Thoughtfully planned celebrations for weddings, family gatherings and special occasions.</p><a class="learn" href="#contact">Let's plan it <span>↗</span></a></div></article>
+      <article class="service reveal"><div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800&q=80')"></div><div class="service-body"><div class="service-kicker">02 / Savour</div><h3>Catering</h3><p>Delicious food, carefully presented and prepared to make every guest feel welcome.</p><a class="learn" href="#contact">Explore catering <span>↗</span></a></div></article>
+      <article class="service reveal"><div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=800&q=80')"></div><div class="service-body"><div class="service-kicker">03 / Transform</div><h3>Decor</h3><p>Elegant setups, thoughtful styling and beautiful details that set the perfect mood.</p><a class="learn" href="#contact">Find your style <span>↗</span></a></div></article>
+      <article class="service reveal"><div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80')"></div><div class="service-body"><div class="service-kicker">04 / Welcome</div><h3>Hospitality</h3><p>Friendly, attentive service that helps your guests feel cared for from start to finish.</p><a class="learn" href="#contact">Talk to our team <span>↗</span></a></div></article>
+    </div>
+  </div>
+</section>
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-art reveal"><div class="art-label"><small>Made with care</small><strong>Memories that stay.</strong></div></div>
+    <div class="about-copy reveal"><div class="eyebrow">About Us</div><h2>Good moments deserve great planning.</h2><p>At High Way Events and Caterers, we believe the best occasions are the ones where every detail feels right. Our services bring event planning, catering, decor and hospitality together, so you can spend less time worrying about the details and more time enjoying the moment.</p><p>From the first conversation to the final guest, our focus is on thoughtful coordination, quality and a welcoming experience.</p>
+      <div class="values"><div class="value"><strong>Thoughtful planning</strong><span>Every occasion shaped around your needs.</span></div><div class="value"><strong>Attention to detail</strong><span>Care in the little things that matter.</span></div><div class="value"><strong>Quality first</strong><span>A consistent focus on food and presentation.</span></div><div class="value"><strong>Guest-first service</strong><span>Warm hospitality throughout your event.</span></div></div>
+    </div>
+  </div>
+</section>
+<section class="banner" id="why-us"><div class="wrap banner-inner reveal"><div><h2>Your occasion. Our commitment.</h2><p>Tell us what you're celebrating — we'll help you bring the details together.</p></div><a class="wa" href="https://wa.me/91XXXXXXXXXX?text=Hello%20High%20Way%20Events%20and%20Caterers%2C%20I%27d%20like%20to%20discuss%20an%20event." target="_blank" rel="noopener">Let's Talk on WhatsApp &nbsp; ↗</a></div></section>
+</main>
+<footer id="contact" aria-label="Contact and footer"><div class="wrap"><div class="footer-top reveal"><a class="footer-brand" href="#home"><img src="assets/high-way-logo.png" alt=""><span><strong>HIGH WAY</strong><small>EVENTS &amp; CATERERS</small></span></a><div class="footer-links"><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#why-us">Why Us</a><a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp Enquiry ↗</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> High Way Events and Caterers. All rights reserved.</span><span>Making every occasion feel special.</span></div></div></footer>
+<a class="float-wa" href="https://wa.me/91XXXXXXXXXX?text=Hello%20High%20Way%20Events%20and%20Caterers!" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">◉ &nbsp; Chat on WhatsApp</a>
+<script>
+const menu=document.getElementById('menu'), links=document.getElementById('navlinks');
+menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'✕':'☰'});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+const revealItems = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.14, rootMargin: '0px 0px -30px 0px' });
+  revealItems.forEach(item => revealObserver.observe(item));
+} else {
+  revealItems.forEach(item => item.classList.add('is-visible'));
+}
+
+</script>
+</body>
+</html>
